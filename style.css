@@ -1,0 +1,336 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* img {
+    max-width: 100%;
+} */
+
+.btn {
+    padding: 8px 20px;
+    background-color: #FD6E0A;
+    border: 1px solid #FD6E0A;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    border-radius: 8px;
+}
+
+.btn-outline {
+    padding: 8px 20px;
+    background-color: transparent;
+    border: 1px solid #FD6E0A;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+    color: #FD6E0A;
+    border-radius: 8px;
+}
+
+header {
+    background-color: #f8f9fa;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+}
+
+.logo {
+    font-size: 32px;
+    font-weight: 700;
+
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    gap: 20px;
+    align-items: center;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+
+.hero-parent {
+    background-color: #FFF8F3;
+}
+
+
+.hero-parent .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.hero-left h2 {
+    font-size: 60px;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    
+    background: linear-gradient(90deg, #FD6E0A, #FF3D00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.hero-left .hero-p1 {
+    font-size: 25px;
+    font-weight: 400;
+    color: #6C757D;
+    margin: 20px 0;
+    font-weight: 600;
+}
+
+.hero-left p {
+    font-size: 20px;
+    font-weight: 400;
+    color: #6C757D;
+    margin: 20px 0;
+}
+
+.hero-btns {
+    margin-top: 10px;
+}
+
+/* about section style */
+
+
+.about-parent {
+    background-color: #FFF8F3;
+    margin: 80px auto;
+    border-radius: 12px;
+    padding: 60px;
+    text-align: center;
+}
+
+.about-parent h2 {
+    font-size: 35px;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+
+.about-info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.about-info p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+.about-info h2 {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.about-info .box {
+    background-color: #f4e7de;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+/* what i do style */
+
+.what-i-do {
+    margin: 80px auto;
+    text-align: center;
+}
+
+.what-title {
+    font-size: 35px;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.what-i-do p {
+    font-size: 18px;
+    color: #757575;
+    margin-top: 36px;
+}
+
+.what-i-do-cards {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.card {
+    padding: 30px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
+    text-align: left;
+    border-radius: 12px;
+}
+
+.card h2 {
+    margin: 20px 0;
+}
+
+.card p {
+    color: #757575;
+}
+
+/* my amazing works style */
+
+.works-parent {
+    text-align: center;
+    margin: 60px auto;
+}
+
+.gallery {
+    margin: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 200px;
+    gap: 12px;
+    grid-template-areas:
+        "one two three"
+        "four two six"
+        "four five six"
+    ;
+}
+
+.gallery img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.box1 {
+    grid-area: one;
+}
+
+.box2 {
+    grid-area: two;
+}
+
+.box3 {
+    grid-area: three;
+}
+
+.box4 {
+    grid-area: four;
+}
+
+.box5 {
+    grid-area: five;
+}
+
+.box6 {
+    grid-area: six;
+}
+
+/* resume section style */
+
+.resume-content {
+    padding: 80px 0;
+}
+
+
+.resume-content p {
+    font-size: 16px;
+    color: #757575;
+    margin-top: 20px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.resume-title {
+    margin-bottom: 60px;
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+    font-family: "Open sans";
+}
+
+.resume-details {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.education h2,
+.experience h2 {
+    margin-bottom: 30px;
+    font-size: 26px;
+    font-weight: bold;
+    font-family: "Open sans";
+    color: #474747;
+}
+
+.education .edu-content h2,
+.experience .experience-content h2 {
+    margin-bottom: 20px;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: "Open sans";
+    color: #474747;
+}
+
+hr {
+    margin: 30px 0;
+}
+
+footer{
+    background-color: #FFF8F3;
+    padding: 100px 0;
+}
+
+.footer-parent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 100px;
+}
+
+.footer-left h2,
+.footer-right h2 {
+    font-size: 35px;
+    margin-bottom: 20px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.footer-left p {
+    font-size: 16px;
+    color: #757575;
+    margin-bottom: 30px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.footer-right form input,
+.footer-right form textarea {
+    background-color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    padding: 20px 20px;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+form .btn{
+    margin-top: 20px;
+}
